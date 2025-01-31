@@ -1,4 +1,4 @@
-<div class="backdrop" (click)="onCancelTask()"></div>
+<div class="backdrop" (click)="onCloseTask()"></div>
 <dialog open>
   <h2>Add Task</h2>
   <form>
@@ -23,12 +23,12 @@
         type="date"
         id="due-date"
         name="due-date"
-        [(ngModel)]="entererDate"
+        [(ngModel)]="enteredDate"
       />
     </p>
 
     <p class="actions">
-      <button type="button" (click)="onCancelTask()">Cancel</button>
+      <button type="button" (click)="onCloseTask()">Cancel</button>
       <button type="submit" (click)="onCreateTask()">Create</button>
     </p>
   </form>
